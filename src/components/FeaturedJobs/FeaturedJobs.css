@@ -1,0 +1,15 @@
+.btn-view {
+    background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%); 
+}
+
+.btn-jobtype span {
+    border-color: #9873FF;
+    border-width: 1px;
+    background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; 
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
