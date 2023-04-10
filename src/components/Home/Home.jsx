@@ -5,7 +5,7 @@ import './Home.css'
 
 const Home = () => {
     return (
-        <div>
+        <div className='container'>
         <section className='hero-area md:pb-32'>
             <div className='gap-7 grid md:grid-cols-2 items-center'>
                 <div className='hero-content block'>
