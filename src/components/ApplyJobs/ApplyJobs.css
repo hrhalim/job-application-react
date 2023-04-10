@@ -1,0 +1,14 @@
+
+.job-img {
+    background: #F4F4F4;
+    border-radius: 8px;
+    width: 240px;
+    height: 240px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.job-img img {
+   max-width: 150px;
+   height: 50px;
+}

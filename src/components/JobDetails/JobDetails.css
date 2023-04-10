@@ -2,4 +2,26 @@
     background: linear-gradient(90deg, rgba(126, 144, 254, 0.1) 0%, rgba(152, 115, 255, 0.1) 100%);
     border-radius: 8px;
     padding: 30px;
+    margin-bottom: 10px;
+}
+.btn-apply {
+    background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    border: 0;
+    width: 100%;
+}
+.job-details {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
+    gap: 24px;
+}
+.job-details p {
+  padding-bottom: 20px;
+  font-size: 15px;
+}
+.job-details p svg {
+  color: #7E90FE;
 }
