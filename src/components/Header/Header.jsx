@@ -17,18 +17,18 @@ const Header = () => {
         <Link to="/blog">Blog</Link> 
       </ul>
     </div>
-    <a className="btn btn-ghost normal-case text-xl">Agency Pro</a>
+    <Link className="font-bold text-3xl" to="/">Agency Pro</Link> 
   </div>
   <div className="navbar-center hidden lg:flex">
-    <ul className="menu menu-horizontal px-1">
-    <Link to="/">Home</Link> 
-      <Link to="/statistics">Statistics</Link>
-      <Link to="/applied-jobs">Applied Jobs</Link>
-      <Link to="/blog">Blog</Link> 
+    <ul className="menu menu-horizontal">
+      <Link className=' px-4' to="/">Home</Link> 
+      <Link className=' px-4' to="/statistics">Statistics</Link>
+      <Link className=' px-4' to="/applied-jobs">Applied Jobs</Link>
+      <Link className=' px-4' to="/blog">Blog</Link> 
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn">Star Applying</a>
+    <a className="btn-started">Star Applying</a>
   </div>
 </div>
         </div>
