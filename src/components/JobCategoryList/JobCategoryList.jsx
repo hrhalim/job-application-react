@@ -21,6 +21,7 @@ const JobCategoryList = () => {
             {
                 jobCategorys.map(jobCategory => <SingleJobCategory
                 jobCategory={jobCategory}
+                key={jobCategory.id}
                 > 
                 </SingleJobCategory>)
             }

@@ -1,5 +1,5 @@
 const addToDb = id => {
-    let addJob = getaddJob(); 
+    let addJob = getJobItem(); 
     const quantity = addJob[id];
     if (!quantity) {
         addJob[id] = 1;
@@ -11,7 +11,7 @@ const addToDb = id => {
     localStorage.setItem('job-item', JSON.stringify(addJob));
 }
 
-const getaddJob = () => {
+const getJobItem = () => {
     let addJob = {};
 
     const storedCart = localStorage.getItem('job-item');
@@ -24,5 +24,5 @@ const getaddJob = () => {
 
 export {
     addToDb,
-    getaddJob,
+    getJobItem,
 }

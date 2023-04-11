@@ -1,55 +1,45 @@
-import React, { useState } from 'react';
-import { MapPinIcon, CurrencyDollarIcon } from '@heroicons/react/24/solid'
-import { Link } from 'react-router-dom';
+import ApplyJobItem from '../ApplyJobItem/ApplyJobItem';
+import { getJobItem } from '../Utilise/Utilse';
 import './ApplyJobs.css' 
+import { useEffect, useState } from 'react';
 
 const ApplyJobs = () => {   
+    
+    const [jobItems, setJobItm] = useState([])
+    const [cart, setCart] = useState([]) 
+    useEffect(() =>{
+        fetch('featuredJob.json')
+        .then(res => res.json())
+        .then(data => setJobItm(data));
+    }, []) 
+
+    useEffect(() => {
+        const storedCart = getJobItem(); 
+        const savedCart = []; 
+        for (const items in storedCart) { 
+            const addedProduct = cart.find(jobItem => console.log(jobItem))
+            console.log(addedProduct);
+            if (addedProduct) {
+                savedCart.push(addedProduct);
+            } 
+        } 
+
+        setCart(savedCart);
+
+    }, [])
+
+
     return (
         <div className='py-24 container'> 
-            <div className='job-item border rounded-md flex justify-between items-center p-7 mb-12'>
-             <div className='jobitem-left flex gap-4 items-center'>
-                <div className='job-img'>
-                    <img src="https://i.ibb.co/wLq3JLx/justeat.png" alt="Logo" />
-                </div>
-                <div className='job-content'>
-                    <h3 className='text-2xl font-semibold pt-4'>title</h3>
-                    <h4 className='pb-2'>company</h4>
-                    <div className='btn-jobtype flex gap-4'> 
-                    </div> 
-                    <div className='flex gap-4 pb-4 pt-4'>
-                        <p className='flex gap-2'><span><MapPinIcon className="h-6 w-6"/></span>Locations</p>
-                        <p className='flex gap-2'><span><CurrencyDollarIcon className="h-6 w-6"/></span>Salary : dfsfaf</p>
-                    </div>
-                </div> 
-             </div>
-            <div className='viewbtn-area'>
-                <Link>
-                <button className='btn-view px-3 py-2 text-white'>View Details</button>
-                </Link>
-            </div>
-            </div> 
-            <div className='job-item border rounded-md flex justify-between items-center p-7'>
-             <div className='jobitem-left flex gap-4 items-center'>
-                <div className='job-img'>
-                    <img src="https://i.ibb.co/wLq3JLx/justeat.png" alt="Logo" />
-                </div>
-                <div className='job-content'>
-                    <h3 className='text-2xl font-semibold pt-4'>title</h3>
-                    <h4 className='pb-2'>company</h4>
-                    <div className='btn-jobtype flex gap-4'> 
-                    </div> 
-                    <div className='flex gap-4 pb-4 pt-4'>
-                        <p className='flex gap-2'><span><MapPinIcon className="h-6 w-6"/></span>Locations</p>
-                        <p className='flex gap-2'><span><CurrencyDollarIcon className="h-6 w-6"/></span>Salary : dfsfaf</p>
-                    </div>
-                </div> 
-             </div>
-            <div className='viewbtn-area'>
-                <Link>
-                <button className='btn-view px-3 py-2 text-white'>View Details</button>
-                </Link>
-            </div>
-            </div> 
+             
+             {
+               jobItems.map(jobItem => <ApplyJobItem
+                jobItem={jobItem}
+                key={jobItem.id}
+               > 
+               </ApplyJobItem> ) 
+             }
+              
         </div>
     );
 };

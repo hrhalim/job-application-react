@@ -5,7 +5,7 @@ const SingleJobCategory = ({jobCategory}) => {
     return (
         <div className='category-list'>
             <img src={image} alt="Icon" />
-            <h3>{title}</h3>
+            <h3 className='pb-2'>{title}</h3>
             <p>{subTitle}</p>
         </div>
     );
