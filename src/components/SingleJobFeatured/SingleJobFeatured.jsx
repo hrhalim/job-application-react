@@ -23,7 +23,7 @@ const SingleJobFeatured = ({job}) => {
                 <p className='flex gap-2'><span><MapPinIcon className="h-6 w-6"/></span>{location}</p>
                 <p className='flex gap-2'><span><CurrencyDollarIcon className="h-6 w-6"/></span>Salary : {salary}</p>
             </div>
-            <Link to={`/jobdetails/${id}`}>
+            <Link to={`/job/${id}`}>
             <button className='btn-view px-3 py-2 text-white'>View Details</button>
             </Link>
         </div> 

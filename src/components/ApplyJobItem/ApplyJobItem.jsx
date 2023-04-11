@@ -24,7 +24,7 @@ const ApplyJobItem = ({jobItem}) => {
             </div> 
             </div>
         <div className='viewbtn-area'>
-            <Link to={`/jobdetails/${id}`}>
+            <Link to={`/job/${id}`}>
             <button className='btn-view px-3 py-2 text-white'>View Details</button>
             </Link>
         </div>

@@ -5,8 +5,7 @@ import {useLoaderData } from 'react-router-dom';
 const ApplyJobs = () => {    
     const Jobitems = useLoaderData();  
     return (
-        <div className='py-24 container'> 
-             
+        <div className='py-24 container'>  
              {
               Jobitems.map(jobItem => <ApplyJobItem
                 jobItem={jobItem}

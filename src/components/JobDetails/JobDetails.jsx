@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import { useLoaderData, useParams } from 'react-router-dom'; 
-import JobDetailsHero from '../JobDetailsHero/JobDetailsHero';
+import { useLoaderData, useParams } from 'react-router-dom';  
 import { MapPinIcon, CurrencyDollarIcon, PhoneIcon, EnvelopeIcon, AcademicCapIcon } from '@heroicons/react/24/solid'
 import './JobDetails.css'
 import { addToDb } from '../../Utilise/Utilse';
+import BannerArea from '../BannerArea/BannerArea';
 
 const JobDetails = () => {
     
@@ -14,7 +14,7 @@ const JobDetails = () => {
     const {id, description, responsibilities, education, experience, phone, salary, title, email, location} = jobDetails;
 
     useEffect(() => {
-        const findData = jobdetailsData.find(data => data.id === JobId.jobdetailsId);
+        const findData = jobdetailsData.find(data => data.id === JobId.jobId);
         setJobDetails(findData) 
     }, []) 
 
@@ -22,10 +22,13 @@ const JobDetails = () => {
     const applyJob = (id) => {
         addToDb(id)
     } 
+    
+    
 
     return ( 
-        <div>
-                <JobDetailsHero></JobDetailsHero>
+        
+        <div> 
+                <BannerArea></BannerArea>
                 <div className='job-details grid gap-6 container md:pt-24 md:pb-24'>
             <div>
                 <p><strong>Job Description:</strong> {responsibilities} </p>
