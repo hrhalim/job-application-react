@@ -2,8 +2,16 @@ import React, {useEffect, useState } from 'react';
 import './FeaturedJobs.css' 
 import SingleJobFeatured from '../SingleJobFeatured/SingleJobFeatured';
 const FeaturedJobs = () => { 
-    const [jobs, setJobs] = useState([]); 
-    const [vissible, setVissible] = useState(4)
+    const [jobs, setJobs] = useState([]);  
+    const [vissible, setVissible] = useState(4)  
+    const jobSlice = jobs.slice(0, vissible);
+
+    //Show all handlar
+    const showAll = () => {
+        setVissible(jobs.length);
+    }
+
+    let btnVissible = vissible > 4 ? "hide" : "show";
     
     useEffect(() =>{
         fetch('featuredJob.json')
@@ -19,7 +27,7 @@ const FeaturedJobs = () => {
             <div className='grid md:grid-cols-2 gap-6'> 
             
                  {
-                    jobs.slice(0, 4).map(job => <SingleJobFeatured 
+                    jobSlice.map(job => <SingleJobFeatured 
                         job={job}
                         key={job.id}
                         ></SingleJobFeatured>)
@@ -27,7 +35,7 @@ const FeaturedJobs = () => {
                 
             </div>
             <div className='text-center pt-10'>
-                <button className='btn-view px-4 py-3 text-white'>See All Jobs</button>
+                <button onClick={() => showAll()} className={`btn-view px-4 py-3 text-white ${btnVissible}`}>See All Jobs</button>
             </div>
         </div>
     );
