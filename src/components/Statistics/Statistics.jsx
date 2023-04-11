@@ -1,9 +1,10 @@
 import React from 'react';
+import DashBoard from '../DashBoard/DashBoard';
 
 const Statistics = () => {
     return (
         <div>
-            Statacie
+            <DashBoard> </DashBoard>
         </div>
     );
 };

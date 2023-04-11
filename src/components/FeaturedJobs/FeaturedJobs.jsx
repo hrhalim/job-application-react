@@ -2,7 +2,8 @@ import React, {useEffect, useState } from 'react';
 import './FeaturedJobs.css' 
 import SingleJobFeatured from '../SingleJobFeatured/SingleJobFeatured';
 const FeaturedJobs = () => { 
-    const [jobs, setJobs] = useState([]);
+    const [jobs, setJobs] = useState([]); 
+    const [vissible, setVissible] = useState(4)
     
     useEffect(() =>{
         fetch('featuredJob.json')
@@ -18,7 +19,7 @@ const FeaturedJobs = () => {
             <div className='grid md:grid-cols-2 gap-6'> 
             
                  {
-                    jobs.map(job => <SingleJobFeatured 
+                    jobs.slice(0, 4).map(job => <SingleJobFeatured 
                         job={job}
                         key={job.id}
                         ></SingleJobFeatured>)
