@@ -8,15 +8,15 @@ const data = [
     },
     {
       name: 'Assignment-2',
-      result: 50,
+      result: 60,
     },
     {
       name: 'Assignment-3',
-      result: 55,
+      result: 59,
     },
     {
       name: 'Assignment-4',
-      result: 40,
+      result: 60,
     },
     {
       name: 'Assignment-5',
@@ -24,11 +24,11 @@ const data = [
     },
     {
       name: 'Assignment-6',
-      result: 55,
+      result: 60,
     },
     {
       name: 'Assignment-7',
-      result: 50,
+      result: 60,
     },
     {
       name: 'Assignment-8',
