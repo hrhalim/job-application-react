@@ -12,6 +12,7 @@ const addToDb = id => {
 }
 
 const getJobItem = () => {
+    
     let addJob = {};
 
     const storedCart = localStorage.getItem('job-item');

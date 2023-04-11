@@ -3,7 +3,7 @@ import { useLoaderData, useParams } from 'react-router-dom';
 import JobDetailsHero from '../JobDetailsHero/JobDetailsHero';
 import { MapPinIcon, CurrencyDollarIcon, PhoneIcon, EnvelopeIcon, AcademicCapIcon } from '@heroicons/react/24/solid'
 import './JobDetails.css'
-import { addToDb } from '../Utilise/Utilse';
+import { addToDb } from '../../Utilise/Utilse';
 
 const JobDetails = () => {
     

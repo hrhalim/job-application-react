@@ -3,35 +3,35 @@ import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContai
 
 const data = [
     {
-      name: 'Assignment One',
+      name: 'Assignment-1',
        result: 60,
     },
     {
-      name: 'Assignment Two',
+      name: 'Assignment-2',
       result: 50,
     },
     {
-      name: 'Assignment Three',
+      name: 'Assignment-3',
       result: 55,
     },
     {
-      name: 'Assignment Four',
+      name: 'Assignment-4',
       result: 40,
     },
     {
-      name: 'Assignment Five',
+      name: 'Assignment-5',
+      result: 60,
+    },
+    {
+      name: 'Assignment-6',
       result: 55,
     },
     {
-      name: 'Assignment Six',
-      result: 55,
-    },
-    {
-      name: 'Assignment Seven',
+      name: 'Assignment-7',
       result: 50,
     },
     {
-      name: 'Assignment Eight',
+      name: 'Assignment-8',
       result: 60,
     },
   ];

@@ -34,7 +34,7 @@ const FeaturedJobs = () => {
                 } 
                 
             </div>
-            <div className='text-center pt-10'>
+            <div className='flex justify-center pt-10'>
                 <button onClick={() => showAll()} className={`btn-view px-4 py-3 text-white ${btnVissible}`}>See All Jobs</button>
             </div>
         </div>

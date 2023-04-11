@@ -13,7 +13,7 @@ import Statistics from './components/Statistics/Statistics';
 import JobDetails from './components/JobDetails/JobDetails'; 
 import ApplyJobs from './components/ApplyJobs/ApplyJobs';
 import ErrorPage from './components/ErrorPage/ErrorPage'
-
+import {cartProductsLoader} from './Utilise/cartProductsLoader';
 
 const router = createBrowserRouter([
   {
@@ -35,7 +35,8 @@ const router = createBrowserRouter([
       },
       {
         path:'applied-jobs',
-        element: <ApplyJobs></ApplyJobs>
+        element: <ApplyJobs></ApplyJobs>,
+        loader: cartProductsLoader
       },
       {
         path: 'blog',

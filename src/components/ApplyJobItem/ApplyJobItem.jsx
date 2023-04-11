@@ -2,6 +2,7 @@ import React from 'react';
 import { MapPinIcon, CurrencyDollarIcon } from '@heroicons/react/24/solid'
 import { Link } from 'react-router-dom';
 
+
 const ApplyJobItem = ({jobItem}) => {
     const {id, image, salary, title, location, company} = jobItem; 
 
