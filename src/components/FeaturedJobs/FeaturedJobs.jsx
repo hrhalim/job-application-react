@@ -21,7 +21,8 @@ const FeaturedJobs = () => {
     }, [])
  
     return (
-        <div className='featured-area md:pt-20 md:pb-20'> 
+        <section className='featured-area md:pt-20 md:pb-20'> 
+            <div className="container">
             <h2 className='text-center text-4xl font-bold pb-4 text-black'>Featured Jobs</h2>
             <p className='text-center pb-7 block'>Explore thousands of job opportunities with all the information you need. Its your future</p>
             <div className='grid md:grid-cols-2 gap-6'> 
@@ -37,7 +38,8 @@ const FeaturedJobs = () => {
             <div className='flex justify-center pt-10'>
                 <button onClick={() => showAll()} className={`btn-view px-4 py-3 text-white ${btnVissible}`}>See All Jobs</button>
             </div>
-        </div>
+            </div>
+        </section>
     );
 };
 
