@@ -7,7 +7,7 @@ const ApplyJobs = () => {
     const Jobitems = useLoaderData();  
 
     const handleFilter = (event) => {
-      console.log(event.value);
+      // console.log(event.value);
     }
     return (
         <div>

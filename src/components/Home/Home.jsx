@@ -10,9 +10,7 @@ const Home = () => {
          <HeroArea></HeroArea>   
          <JobCategoryList></JobCategoryList>
          <FeaturedJobs></FeaturedJobs>
-        </div>
-
-        
+        </div> 
         
     );
     
