@@ -17,6 +17,8 @@ This Project is a Simple ReactJS Project which demonstrates the following:
 * Showed getting data from local storage and apply jobs page 
 * Created a blog page there four questions added with answer
 * Showed Recharts chart based on all assignment marks.
+* Showed the filter option based on remote and onsite jobs
+* This website is an job web applications where users apply here you can apply there base on positions.
 * Created all functionality of each by separate components
 
 ## Live Application URL 

@@ -22,7 +22,6 @@ const getJobItem = () => {
     return addJob;
 }
 
-
 export {
     addToDb,
     getJobItem,
