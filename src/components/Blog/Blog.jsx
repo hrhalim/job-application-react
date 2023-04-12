@@ -1,10 +1,12 @@
 import React from 'react';
+import BannerArea from '../BannerArea/BannerArea';
 
 const Blog = () => {
     return (
-        <section className='blog-area pt-10 pb-10 text-center'>
-           <div className="container">
-           <h1 className='text-center text-4xl text-black font-bold pb-5'>FQA</h1>
+        <div>
+            <BannerArea>FQA</BannerArea>
+            <section className='blog-area pt-10 pb-10 text-center'>
+           <div className="container"> 
             <div className="faq-item mb-5 border p-5 md:w-3/5 m-auto">
                 <h2 className='text-center text-2xl text-black font-semibold'>When should you use context API?</h2>
                 <p className='text-left'>Context API is a global variable system  in React that allows data to be passed down through a component tree without having to pass props down manually. Context API is useful when we have data that is needed by many components in our application,  then easily data pass by Context API. whice by easily we can use this any components.  <br />
@@ -27,7 +29,9 @@ const Blog = () => {
                 <p>The useMemo is a hook used in the functional component of react that returns a memoized value. and  a memoized function members the results of output for a given set of inputs. and whenever in the React component, the state and props do not change the component and the component does not re-render. the useMemo hook is used to improve performance in our React application.</p>
             </div>
            </div>
-        </section>
+            </section>
+        </div>
+        
     );
 };
 

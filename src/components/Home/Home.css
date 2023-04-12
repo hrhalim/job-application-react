@@ -1,5 +1,5 @@
 .category-list {
-    background: linear-gradient(90deg, rgba(126, 144, 254, 0.05) 0%, rgba(152, 115, 255, 0.05) 100%);
+    background: linear-gradient(90deg, rgb(126 144 254 / 10%) 0%, rgb(152 115 255 / 7%) 100%);
     border-radius: 8px;
     padding: 40px;
 }
@@ -45,4 +45,28 @@
     padding: 10px 20px;
     color: #fff;
     font-size: 20px;
+}
+
+
+/* Responsive */
+@media only screen and (max-width: 767px) {
+    .hero-content h1 { 
+        font-size: 32px; 
+    }
+    .logo {
+        font-size: 20px !important;
+    }
+    .btn-started { 
+        font-size: 15px;
+    }
+    .category-list { 
+        padding: 20px;
+    }
+    .category-list img { 
+        margin-bottom: 15px;
+    }
+    .job-item p {
+        font-size: 13px;
+    }
+
 }

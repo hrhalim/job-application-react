@@ -38,7 +38,7 @@ const data = [
 
 const DashBoard = () => { 
     return (
-        <div className='pt-10 flex justify-center'>
+        <div className='pt-20 pb-20 flex justify-center'>
         <AreaChart
           width={1300}
           height={450}

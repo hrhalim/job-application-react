@@ -17,7 +17,7 @@ const Header = () => {
         <Link to="/blog">Blog</Link> 
       </ul>
     </div>
-    <Link className="font-bold text-3xl" to="/">Agency Pro</Link> 
+    <Link className="font-bold text-3xl logo" to="/">Agency Pro</Link> 
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal">

@@ -61,7 +61,7 @@
     },
     {
         "id": "5",
-      "image": "https://i.ibb.co/wLq3JLx/justeat.png",
+      "image": "https://i.ibb.co/4SR2P6N/hiclipart-com.png",
       "title": "Web Developer",
       "company": "Justeat",
       "jobTypes": ["Remote", "Full-time"],
@@ -76,10 +76,10 @@
     },
     {
         "id": "6",
-      "image": "https://i.ibb.co/QDyq34x/images.png",
+      "image": "https://i.ibb.co/cJRPJ5C/tousiba.png",
       "title": "Software Engineer",
-      "company": "Amazon",
-      "jobTypes": ["Remote", "Full-time"],
+      "company": "Toshiba inc",
+      "jobTypes": ["Remote", "Onsite"],
       "location": "USA",
       "salary": "$50,000 - $80,000",
       "description": "Amazon Corporation is seeking a skilled sales representative to join our team. The ideal candidate will have experience in B2B sales and account management.",

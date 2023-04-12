@@ -28,8 +28,8 @@ const JobDetails = () => {
     return ( 
         
         <div> 
-                <BannerArea></BannerArea>
-                <div className='job-details grid gap-6 container md:pt-24 md:pb-24'>
+                <BannerArea>Job Details</BannerArea>
+                <div className='job-details pt-3 pb-3 grid gap-6 container md:pt-24 md:pb-24'>
             <div>
                 <p><strong>Job Description:</strong> {responsibilities} </p>
                 <h4><strong>Educational Requirements:</strong></h4>

@@ -7,8 +7,8 @@ const ApplyJobItem = ({jobItem}) => {
     const {id, image, salary, title, location, company} = jobItem; 
 
     return (
-        <div className='job-item border rounded-md flex justify-between items-center p-7 mb-12'>
-            <div className='jobitem-left flex gap-4 items-center'>
+        <div className='job-item border rounded-md md:flex justify-between items-center p-7 mb-12'>
+            <div className='jobitem-left flex gap-4 items-center flex-wrap'>
             <div className='job-img'>
                 <img src={image} alt="Logo" />
             </div>

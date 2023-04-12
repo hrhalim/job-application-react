@@ -25,3 +25,10 @@
 .job-details p svg {
   color: #7E90FE;
 }
+/* Responsive */
+@media only screen and (max-width: 767px) {
+  .job-details { 
+    grid-template-columns: 1fr; 
+  }
+
+ }

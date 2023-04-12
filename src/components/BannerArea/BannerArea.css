@@ -1,15 +1,24 @@
 .banner-area {
     background-image: url(/src/assets/banner-area-bg.png);
-    background-color:#e5e7eb;
+    background-color: #e5e7eb;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 147px 0px 130px;
-    margin-top: -82px;
-    text-align: center; 
+    padding: 155px 0px 130px;
+    margin-top: -92px;
+    text-align: center;
 }
 .banner-area h1 { 
-    font-weight: 600;
+    font-weight: 700;
     font-size: 32px; 
     color: #1A1919; 
 }
+
+/* Responsive */
+@media only screen and (max-width: 767px) {
+    .banner-area { 
+        padding: 150px 0px 80px; 
+    }
+  
+   }
+  
